@@ -1,0 +1,140 @@
+<!-- 我的 -->
+<view class="content">
+  <view class="bg">
+    <view class="head">
+      <view class="headIcon" >
+        <image src="{{src}}" bindtap='setHead' style="width:60px;height:60px;border-radius:50%;"></image>
+      </view>
+      <view class="login">
+         LEAUQEAAN 
+      </view>
+    </view>
+  </view>
+  <view class="hr"></view> 
+  
+  <view class="item">
+    <view class="img">
+      <image src="/images/icon/coin.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">我的积分</view>
+    <view class="detail">
+      <view class="weui-cell__ft weui-cell__ft_in-access">
+        <!--<view class="weui-badge" style="margin-left: 5px;">1</view>-->
+        <view class="weui-badge" style="margin-left: 5px;color:black;background-color:white;">15</view>
+      </view>
+    </view>
+  </view> 
+
+  <view class="line"></view>
+  <view class="item" bindtap='person'>
+    <view class="img">
+      <image src="/images/icon/person.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">个人资料</view>
+    <view class="detail" >
+      <view class="weui-cell__ft weui-cell__ft_in-access">
+       <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+   <view class="line"></view>
+  <view class="item"  bindtap='shr'>
+    <view class="img">
+      <image src="/images/icon/addr.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">收货人</view>
+    <view class="detail">
+      <view class="weui-cell__ft weui-cell__ft_in-access"> 
+      <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item" bindtap='order'>
+    <view class="img">
+      <image src="/images/icon/order.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">我的订单</view>
+    <view class="detail">
+      <view class="weui-cell__ft weui-cell__ft_in-access">
+       <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="img">
+      <image src="/images/icon/glasses.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">我的试戴</view>
+    <view class="detail">
+      <view class="weui-cell__ft weui-cell__ft_in-access">
+        <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+  
+<view class="line"></view> 
+  <view class="item" bindtap="loadCoupon">
+    <view class="img">
+      <image src="/images/icon/yhqcard.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">优惠券</view>
+    <view class="detail">
+      <view class="weui-cell__ft weui-cell__ft_in-access">
+        <!--<view class="weui-badge" style="margin-left: 5px;">1</view>-->
+        <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view> 
+<view class="line"></view>
+ 
+   <view class="item" >
+    <view class="img">
+      <image src="/images/icon/tj.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">推荐有礼</view>
+    <view class="detail"> 
+      <view class="weui-cell__ft weui-cell__ft_in-access"> 
+      <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+   <view class="item"  bindtap="stores">
+    <view class="img">
+      <image src="/images/icon/store.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">门店</view>
+    <view class="detail"> 
+      <view class="weui-cell__ft weui-cell__ft_in-access"> 
+      <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view class="img">
+      <image src="/images/icon/kf.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">客服中心</view>
+    <view class="detail"> 
+      <view class="weui-cell__ft weui-cell__ft_in-access"> 
+      <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+  <view class="hr"></view>  
+   <view class="item" bindtap="exit">
+    <view class="img">
+      <image src="/images/icon/exit.png" style="width:24px;height:24px;"></image>
+    </view>
+    <view class="name">退出登录</view>
+    <view class="detail"> 
+      <view class="weui-cell__ft weui-cell__ft_in-access"> 
+      <view class="weui-badge" style="margin-left: 5px;color:white;background-color:white;"></view>
+      </view>
+    </view>
+  </view>
+  <view class="hr"></view> 
+</view>

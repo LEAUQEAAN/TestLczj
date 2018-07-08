@@ -1,0 +1,49 @@
+.page{  
+  display: flex;  
+  background-color: #FFFFFF;
+  flex-direction: column;  
+  height: 100%;  
+  padding-top: 10px;
+}  
+
+
+.fnt{
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 25px;
+}
+.title{
+  font-size: 16px;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  margin: 0 auto;
+  width: 90%;
+  height: 25px;
+}
+.itm{ 
+  text-align: center;  
+  margin: 0 auto;
+  width: 90%;
+  height: 80px;
+  padding-top:10px;
+  
+
+}
+
+.imgleft{
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin-left:20%;
+}
+
+.imgright{
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-right:20%;
+}
+

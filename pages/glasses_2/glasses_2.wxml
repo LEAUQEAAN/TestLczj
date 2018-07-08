@@ -1,0 +1,131 @@
+<!--pages/znxj_1/znxj_1.wxml-->
+<!--pages/znxj_0.wxml-->
+<view class="page"> 
+  <view class="fnt">请输入你的参数信息</view> 
+
+<view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+        <view class="weui-label">瞳距</view>
+    </view>
+    <view class="weui-cell__bd">
+        <input bindinput='listenerEyesdisInput' class="weui-input" placeholder="" /> 
+    </view>
+</view>   
+<view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+        <view class="weui-label">性别</view>
+    </view>
+    <view class="weui-cell__bd">
+      <checkbox-group >
+        <checkbox  class="weui-input" id='1' bindtap='setSex'  value="1" checked='{{sex==1}}' />男     
+        <checkbox style='margin-left:20px;'  class="weui-input" id='0' bindtap='setSex'  value="0"  checked='{{sex==0}}'/>女
+      </checkbox-group>
+    </view>
+</view>  
+<view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+        <view class="weui-label">年龄</view>
+    </view>
+    <view class="weui-cell__bd">
+              <input bindinput='listenerAgeInput' class="weui-input" placeholder="" /> 
+    </view>
+</view>    
+<view class="weui-cell weui-cell_input ">
+    <view class="weui-cell__hd"> 
+    </view>
+    <view class="weui-cell__bd weui-input"> 
+      <view class="weui-label "  style='float:left;margin-left:25px;'>左眼</view><view   style='float:right;margin-right:5px;' class="weui-label">右眼</view>
+    </view> 
+</view>
+<view class="weui-cell weui-cell_input ">
+    <view class="weui-cell__hd">
+        <view class="weui-label">类型</view>
+    </view>
+    <view class="weui-cell__bd weui-input"> 
+      <view class="weui-label "  style='float:left;margin-left:25px;'>
+        <picker bindchange="bindLeftPickerChange" value="{{left_eyes.index}}" range="{{left_eyes.types}}">
+            <label style='font-size:15px;'  >{{left_eyes.text}}</label>
+        </picker>
+      </view>
+      <view   style='float:right;margin-right:5px;' class="weui-label">
+        <picker bindchange="bindRightPickerChange" value="{{right_eyes.index}}" range="{{right_eyes.types}}">
+            <label style='font-size:15px;'  >{{right_eyes.text}}</label>
+        </picker>
+      </view>
+    </view> 
+</view>
+
+<view class="weui-cell weui-cell_input ">
+    <view class="weui-cell__hd">
+        <view class="weui-label">度数</view>
+    </view>
+    <view class="weui-cell__bd weui-input"> 
+      <view class="weui-label "  style='float:left;margin-left:25px;'>
+        <picker bindchange="bindLeftDsPickerChange" value="{{left_ds.index}}" range="{{left_ds.datas}}">
+           <label style='font-size:15px;'  >{{left_ds.text}}度</label> 
+        </picker>
+      </view>
+      <view   style='float:right;margin-right:5px;' class="weui-label">
+        <picker bindchange="bindRightDsPickerChange" value="{{right_ds.index}}" range="{{right_ds.datas}}">
+            <label style='font-size:15px;'  >{{right_ds.text}}度</label> 
+        </picker>
+      </view>
+    </view> 
+</view>
+
+<view class="weui-cell weui-cell_input ">
+    <view class="weui-cell__hd">
+        <view class="weui-label">散光度数</view>
+    </view>
+    <view class="weui-cell__bd weui-input"> 
+      <view class="weui-label "  style='float:left;margin-left:25px;'>
+        <picker bindchange="bindLeftSgPickerChange" value="{{left_sg.index}}" range="{{left_sg.datas}}">
+           <label style='font-size:15px;'  >{{left_sg.text}}度</label> 
+        </picker>
+      </view>
+      <view   style='float:right;margin-right:5px;' class="weui-label">
+        <picker bindchange="bindRightSgPickerChange" value="{{right_sg.index}}" range="{{right_sg.datas}}">
+            <label style='font-size:15px;'  >{{right_sg.text}}度</label> 
+        </picker>
+      </view>
+    </view> 
+</view>
+<view class="weui-cell weui-cell_input ">
+    <view class="weui-cell__hd">
+        <view class="weui-label">散光轴位</view>
+    </view>
+    <view class="weui-cell__bd weui-input"> 
+      <view class="weui-label "  style='float:left;margin-left:25px;'>
+        <picker bindchange="bindLeftZwPickerChange" value="{{left_zw.index}}" range="{{left_zw.datas}}">
+           <label style='font-size:15px;'  >{{left_zw.text}}度</label> 
+        </picker>
+      </view>
+      <view   style='float:right;margin-right:5px;' class="weui-label">
+        <picker bindchange="bindRightZwPickerChange" value="{{right_zw.index}}" range="{{right_zw.datas}}">
+            <label style='font-size:15px;'  >{{right_zw.text}}度</label> 
+        </picker>
+      </view>
+    </view> 
+</view>
+<view class="weui-cell weui-cell_input ">
+    <view class="weui-cell__hd">
+        <view class="weui-label">脸型</view>
+    </view>
+    <view class="weui-cell__bd weui-input"> 
+    </view> 
+</view>  
+
+<view class="itm">
+    <block wx:for="{{listData}}" wx:key="unique" > 
+      <view class="imgleft" style='{{item.style}}' bindtap='setVal' data-id='{{item.face}}'>
+          <image style='height:100%;width:100%;' hidden='{{currentFace != item.face}}' src = "{{item.photo1}}" />
+           <image style='height:100%;width:100%;' hidden='{{currentFace == item.face}}' src = "{{item.photo2}}" />
+      </view>
+  </block>
+  
+   
+</view> 
+<view class="itm" style="height:30px;">
+  <button class="weui-btn  btn" type="warn"  bindtap='next' plain='true'   size="mini">下一步</button>
+</view>
+</view>

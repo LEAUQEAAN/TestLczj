@@ -1,0 +1,16 @@
+<view class="page">
+  <swiper indicator-dots="{{indicatorDots}}"  
+      autoplay="{{autoplay}}"  style="height:200px;" interval="{{interval}}" duration="{{duration}}">  
+    <block wx:for="{{imgUrls}}" wx:key = 'unique'>  
+      <swiper-item style="height:auto;">  
+          <navigator url="{{item.link}}" style="height:auto;" hover-class="navigator-hover">  
+          <image src="{{item.url}}" class="slide-image" mode="widthFix"/>  
+          </navigator>   
+      </swiper-item>  
+    </block>  
+  </swiper>  
+  <block wx:for="{{items}}" wx:for-item="it" wx:key = 'unique'>   
+        <view class="itm-left" bindtap='goes' data-url='{{it.url}}' ><image style='width:100%;border-radius:5px;' src='{{it.photo1}}' mode="widthFix"></image></view> 
+    </block>   
+  <view class='hr'></view>
+</view>

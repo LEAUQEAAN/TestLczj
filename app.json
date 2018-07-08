@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/baike/baike",
+    "pages/encyclopedias/encyclopedias",
+    "pages/order/order",
+    "pages/coupon/coupon",
+    "pages/cart/cart",
+    "pages/login/login",
+    "pages/trytoware/trytoware",
+    "pages/reciver/reciver",
+    "pages/reciver-add/reciver-add",
+    "pages/person/person",
+    "pages/stores/stores", 
+    "pages/baikedetail/baikedetail",
+    "pages/glasses_0/glasses_0",
+    "pages/glasses_1/glasses_1",
+    "pages/glasses_2/glasses_2",
+    "pages/glasses_3/glasses_3",
+    "pages/glasses_4/glasses_4",
+    "pages/glasses_5/glasses_5",
+    "pages/glasses_6/glasses_6"
+  ],
+  "window": {
+    "backgroundTextStyle": "#FFFFFF",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "乐潮之境",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#515151",
+    "backgroundColor": "#FEFEFE",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/bar/home_00.png",
+        "selectedIconPath": "images/bar/home_01.png"
+      },
+      {
+        "pagePath": "pages/encyclopedias/encyclopedias",
+        "text": "眼镜百科",
+        "iconPath": "images/bar/eye_00.png",
+        "selectedIconPath": "images/bar/eye_01.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/bar/cart_00.png",
+        "selectedIconPath": "images/bar/cart_01.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/bar/person_00.png",
+        "selectedIconPath": "images/bar/person_01.png"
+      }
+    ]
+  }
+}

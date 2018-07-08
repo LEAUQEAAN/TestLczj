@@ -1,0 +1,65 @@
+<view class="container1" style='padding:0;'>
+  <view class="info" style='width:100%;margin:0 auto;' hidden="{{currentTab!==0}}">
+    <view class="me_tool">
+       <image src='../../images/icon/flash.png' class="me_smal_img" ></image>
+       <view class="txt-tool" >清理工具</view>
+       <view class="me_btn" bindtap='dels' >删除</view>
+    </view>
+    <view class="line" style='margin-top:25px;'></view> 
+    <view class="items">
+      <checkbox-group bindchange="checkboxChange">
+        <block wx:for="{{goods}}" wx:key="unique" >
+          <view class="item">
+            <view class="icon">
+              <checkbox   value="{{item.id}}" checked="{{item.selected}}" />
+            </view>
+            <view class="pic">
+             <image src="{{item.pic}}" style="width:70px;height:70px;border:1px solid #ffffff;"></image>
+            </view>
+            <view class="order">
+              <view class="title">{{item.title}}</view>
+              <view class="desc">
+                <view>规格：{{item.spec}}</view>
+              </view>
+              <view class="priceInfo">
+                <view class="price">￥{{item.price}}</view>
+                <view class="minus" id="{{item.id}}" bindtap="minusGoods">-</view>
+                <view class="count">{{item.count}}</view>
+                <view class="add" id="{{item.id}}" bindtap="addGoods">+</view>
+              </view>
+            </view> 
+          </view>
+          <view class="line"></view>
+        </block>
+      </checkbox-group>
+       <view style='  height: 45px;width: 100%;background-color:#ffffff;'>
+       </view>
+      <checkbox-group class="totalInof" bindchange="checkAll">
+        <view class="totalInof">
+          <view class="all">
+            <view>
+              <checkbox checked="{{selectedAll}}" />全选
+            </view> 
+          </view>
+          <view class="amount">
+            <view class="total">
+              总计：￥{{totalPrice}}元
+            </view> 
+          </view>
+          <view class="opr">去结算</view>
+        </view>
+      </checkbox-group>
+    </view>
+
+  </view>
+
+  <view class="empty-cart"  hidden="{{currentTab!==1}}">
+  <view class="empty-img">
+    <image src="../../images/icon/empty_cart.png" style='width:100%;height:100%;'></image>
+  </view>
+   <view class="empty-img" style='height:30px;font-size:14px;;text-align:center;margin-top:0px;'>
+       空空如也 ~ ~
+  </view>
+  </view>
+
+</view>

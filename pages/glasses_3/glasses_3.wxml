@@ -1,0 +1,17 @@
+<!--pages/glasses_4/glasses_4.wxml-->
+<view class="page" style='background-color:#fdfdfd;'> 
+  <view class="fnt">请选择择镜方式</view>
+  <view class="usermotto" style='text-align:center;' bindtap="paise" > 
+        <cover-image src="/images/icon/znxj1.jpg" style="width:100%;height:220px;margin:0 auto;" ></cover-image> 
+        <cover-view class="cv-1">
+           <cover-view class="view-txt">拍  照  择  镜</cover-view>
+        </cover-view>
+         
+  </view>
+  <view class="usermotto" style='text-align:center;' bindtap="test"> 
+        <cover-image src="/images/icon/znxj2.jpg" style="width:100%;height:220px;margin:0 auto;" bindtap="next" ></cover-image> 
+       <cover-view class="cv-2">
+           <cover-view class="view-txt">模  特  择  镜</cover-view>
+        </cover-view>
+  </view>
+</view>

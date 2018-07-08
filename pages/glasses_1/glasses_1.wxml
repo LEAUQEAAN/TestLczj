@@ -1,0 +1,17 @@
+<!--pages/znxj_1/znxj_1.wxml-->
+<!--pages/znxj_0.wxml-->
+<view class="page"> 
+<view class="fnt">通过提供下方信息</view>
+  <view class="fnt">您将获得更周到细致的用户体验</view>
+  <view class="fnt">您通常在什么情况下戴眼镜？</view> 
+  <block wx:for="{{listData}}" wx:key="unique" > 
+    <view class="itm" bindtap='setVal' data-id="{{item.occasion}}" >
+        <image style='height:100%;width:100%;' hidden='{{currentValue != item.occasion }}'  src = "{{item.photo1}}" /> 
+        <image style='height:100%;width:100%;'  hidden='{{currentValue == item.occasion }}' src = "{{item.photo2}}" /> 
+        <view class="cview"> <view style='margin-top:50px;'>{{item.name}}</view><view>{{item.english}}</view></view>         
+    </view>   
+  </block>
+<view class="itm" style="height:30px;margin-bottom:20px;">
+  <button class="weui-btn  btn" type="warn"  bindtap='next' plain='true'   size="mini">下一步</button>
+</view>
+</view>

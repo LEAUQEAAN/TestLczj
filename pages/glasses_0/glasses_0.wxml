@@ -1,0 +1,54 @@
+<!--pages/znxj_0.wxml-->
+<view class="page">
+  <view class="fnt">通过提供下方信息</view>
+  <view class="fnt">您将获得更周到细致的用户体验</view>
+
+<view class="title">您的性别</view>
+
+<view class="itm">
+  <view class="imgleft" bindtap='setNv'>
+      <image style='height:100%;width:100%;' src = "{{nv}}" />
+  </view>
+  <view class="imgright" bindtap='setNan'>
+      <image style='height:100%;width:100%;' src = "{{nan}}" />
+  </view>
+</view>
+<view class="itm" style="height:30px;padding-top:0px;">
+  <view class="imgleft"  style="height:30px;">
+      女
+  </view>
+   <view class="right"  style="height:30px;">
+      男
+  </view>
+</view>
+<view class="title">您的年龄</view> 
+<view class="itm">
+  <view class="imgleft" bindtap='setGirl'>
+      <image style='height:100%;width:100%;' src = "{{girl}}" />
+  </view>
+  <view class="imgright" bindtap='setWomen'>
+      <image style='height:100%;width:100%;' src = "{{women}}" />
+  </view>
+</view>
+<view class="itm" style="height:30px;padding-top:0px;">
+  <view class="imgleft"  style="height:30px;">
+      40-
+  </view>
+   <view class="right"  style="height:30px;">
+      40+
+  </view>
+</view>
+<view class="title">您的脸型</view>
+
+<view class="itm">
+  <view class="imgleft" bindtap='setYL'>
+      <image style='height:100%;width:100%;' src = "{{yl}}" />
+  </view>
+  <view class="imgright" bindtap='setTyl'>
+      <image style='height:100%;width:100%;' src = "{{tyl}}" />
+  </view>
+</view>
+<view class="itm" style="height:30px;;margin-bottom:20px;">
+  <button class="weui-btn  btn" type="warn"  bindtap='next' plain='true'   size="mini">下一步</button>
+</view>
+</view>

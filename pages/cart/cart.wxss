@@ -1,0 +1,205 @@
+.content{
+  font-family: "Microsoft YaHei";
+  height: auto;
+  background-color: #F9F9F8;
+   display: flex;
+}
+.info{
+  background-color: #ffffff;
+  
+}
+.line{
+  border:1px solid #FFFFFF;
+  opacity: 0.2;
+}
+.receive{
+  padding:10px;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  align-items: center;
+}
+.order{
+  width:100%;
+  height:87px; 
+}
+.title{
+  font-size: 15px;
+  padding-left: 10px;
+}
+.desc{
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  color: #cccccc;
+  padding-left: 10px;
+}
+.desc view{
+  margin-right: 10px;
+}
+.priceInfo{
+  display: flex;
+  flex-direction: row;
+  margin-top:10px;
+}
+.price{
+  width:65%;
+  font-size: 15px;
+  color: #ff0000;
+  text-align: left;
+  padding-left: 10px;
+}
+.minus,.add{
+  border:1px solid #F0F0F0;
+  width:20px;
+  text-align: center;
+  font-size: 12px;
+}
+.count{
+  border-top:1px solid #F0F0F0;
+  border-bottom:1px solid #F0F0F0;
+  width:20px;
+  padding-top: 2px;
+  font-size: 12px;
+  text-align: center;
+}
+.totalInof{
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  position: fixed;
+  background-color: #FFFFFF;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  width: 100%;
+  bottom: 0px;
+}
+.all{
+  align-items: center;
+  padding-left: 10px;
+  width:20%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.amount{
+  width:50%;
+  font-size: 13px;
+  text-align: right;
+  margin-right: 95px;
+  padding-right: 5px;
+}
+.total{
+  font-size: 14px;
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.opr{
+  position: absolute;
+  right: 0px;
+  width:92px;
+  background-color: rgb(229,84,35);
+  font-size: 15px;
+  font-weight: bold;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+}
+  
+
+.me_btn{
+  color:rgb(229,84,35);
+  margin-right:10px;
+  text-align:center;
+  width:45px;
+  border-radius:10px;
+  float:right;
+  border:1px solid rgb(229,84,35);
+  margin-top:7px;
+  font-size:12px;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.me_tool{
+  height:35px;
+  width:100%;  
+  z-index: 9999999;
+  position: fixed;
+  top:0;
+  background-color:white;
+  border-bottom:1px solid #F7F7F7;
+}
+
+.me_smal_img{
+  height: 20px;
+  width:20px;
+  float:left;
+  margin-top: 7px;
+}
+
+.txt-tool{
+  color:#707070;
+  float: left;
+  width:50px;
+  font-size:12px;
+  padding-top: 7px;
+
+
+}
+
+checkbox .wx-checkbox-input{
+   /*border-radius: 50%;/* 圆角 */
+   width: 30rpx; /* 背景的宽 */
+   height: 30rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border-color: rgb(229,84,35);
+   background: rgb(229,84,35);
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: transparent; 
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.container1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+  box-sizing: border-box;
+} 
+.empty-cart{
+  width: 100%;
+  height: auto;
+  padding-top: 140px;
+  margin-top: 0px;
+}
+ 
+ .empty-img{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; 
+  color:#707070;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+ 
+ 

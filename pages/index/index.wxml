@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container" style='background-color:#fdfdfd;'>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <view class="userinfo-avatar" >
+      <image bindtap="bindViewTap" style='height:100%;width:100%;border-radius:50%;' src="{{userInfo.avatarUrl}}" background-size="cover"></image> 
+      </view>
+    </block>
+    <view style='text-align:center;'>
+     <text class="userinfo-nickname">欢迎{{userInfo.nickName}}</text>
+     </view>
+  </view> 
+  <view class="usermotto" style='text-align:center;'> 
+        <image src="/images/icon/znxj.png" style="width:150px;height:150px;margin:0 auto;" bindtap="enter" /> 
+        <view style="color:rgb(212,35,122);letter-spacing:30px;text-align:center;padding-left:30px;">智能选镜</view>
+            
+  </view>
+</view>

@@ -1,0 +1,66 @@
+<!-- 我的订单 -->
+<view class="content">
+  <view class="menu" style='position:fixed;z-index:9999;top:0px;'>
+    <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchNav">待付款</view>
+    <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav">待收货</view>
+    <view class="{{currentTab==2?'select':'default'}}" data-current="2" bindtap="switchNav">待评价</view>
+    <view class="{{currentTab==3?'select':'default'}}" data-current="3" bindtap="switchNav">已完成</view>
+  </view> 
+  <view style='height:45px;width:100%;'></view>
+  <block wx:for="{{coupons}}"  wx:key="unique">
+    <view class="items">
+        <view class="items_top">
+          <view class="shop_name">onemore官方旗舰店</view>
+          <view class="order_state">交易成功</view>
+        </view>
+        <view class="items_items">
+          <view class="items_items_item">
+            <view class="img">
+              <image style='width:100%;height:100%;' src="../../images/icon/good.jpg" />
+            </view>
+            <view class="priceandnum">
+              <view class="price">￥529</view>
+              <view class="num">x1</view> 
+            </view> 
+            <view class="good_info">
+              <view class="title">小方格半身裙</view>
+              <view class="desc">颜色分类：黑色；尺寸160/66A/S</view>
+            </view>
+          </view>
+          <view class="items_items_item">
+            <view class="img">
+              <image style='width:100%;height:100%;' src="../../images/icon/good.jpg" />
+            </view>
+            <view class="priceandnum">
+              <view class="price">￥529</view>
+              <view class="num">x1</view> 
+            </view> 
+            <view class="good_info">
+              <view class="title">小方格半身裙</view>
+              <view class="desc">颜色分类：黑色；尺寸160/66A/S</view>
+            </view>
+          </view>
+          <view class="items_items_item">
+            <view class="img">
+              <image style='width:100%;height:100%;' src="../../images/icon/good.jpg" />
+            </view>
+            <view class="priceandnum">
+              <view class="price">￥529</view>
+              <view class="num">x1</view> 
+            </view> 
+            <view class="good_info">
+              <view class="title">小方格半身裙</view>
+              <view class="desc">颜色分类：黑色；尺寸160/66A/S</view>
+            </view>
+          </view>
+
+        </view>
+        <view class="items_top" style='font-size:14px;text-align:right;border-bottom:1px solid #F7F7F7;'>
+          共1件商品，合计：592.00（含运费￥0.00）
+        </view>
+        <view class="items_top"> 
+          <view class="me_btn" bindtap='dels' >删除订单</view>
+        </view>
+    </view>
+  </block>
+</view>

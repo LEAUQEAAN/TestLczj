@@ -1,0 +1,60 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input"> 
+           <view class="weui-cell__hd">
+                <view class="weui-label">收货人</view>
+            </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" placeholder=""/>
+              </view>
+          </view>
+           <view class="weui-cell weui-cell_input"> 
+           <view class="weui-cell__hd">
+                <view class="weui-label">电话</view>
+            </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" />
+              </view>
+          </view>
+           <view class="weui-cell weui-cell_input"> 
+           <view class="weui-cell__hd">
+                <view class="weui-label">省份</view>
+            </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" />
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input"> 
+           <view class="weui-cell__hd">
+                <view class="weui-label">地市</view>
+            </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" />
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input"> 
+           <view class="weui-cell__hd">
+                <view class="weui-label">区县</view>
+            </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" />
+              </view>
+          </view> 
+          <view class="weui-cell">
+             <view class="weui-cell__hd">
+                  <view class="weui-label">街道</view>
+              </view>
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+            
+        <view class="weui-btn-area" style='text-align:center;'>
+            <button class="weui-btn" type="primary" >添加</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,53 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input"> 
+           <view class="weui-cell__hd">
+                <view class="weui-label">昵称</view>
+            </view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" placeholder="请输入昵称"/>
+              </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                  <view class="weui-label">性别</view>
+              </view>
+              <view class="weui-cell__bd">
+              <checkbox-group >
+                <checkbox  class="weui-input" id='1' bindtap='setSex'  value="1" checked='{{sex==1}}' />男     
+                <checkbox style='margin-left:20px;'  class="weui-input" id='0' bindtap='setSex'  value="0"  checked='{{sex==0}}'/>女
+                </checkbox-group>
+              </view>
+          </view>  
+ 
+           
+            <view class="weui-cell weui-cell_input"> 
+               <view class="weui-cell__hd">
+                  <view class="weui-label">生日</view>
+              </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="weui-input">{{date}}</view>
+                    </picker>
+                </view>
+            </view>
+
+            
+            <view class="weui-cell">
+             <view class="weui-cell__hd">
+                  <view class="weui-label">地址</view>
+              </view>
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入地址" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+            
+        <view class="weui-btn-area" style='text-align:center;'>
+            <button class="weui-btn" type="primary" >    确认修改</button>
+        </view>
+    </view>
+</view>

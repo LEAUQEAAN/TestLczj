@@ -1,0 +1,33 @@
+.viewTakePhoto{
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+.cover-v{
+  width: 100%;
+  height: 100rpx;   
+  z-index: 99999;
+  left:0;
+  position: absolute;
+  bottom:20px;
+}
+
+
+.btnImg {
+  width: 100rpx;
+  height: 100rpx;    
+  margin: 0 auto;
+}
+.btnImg-small {
+  width: 60rpx;
+  height: 60rpx;    
+  margin: 0 auto;
+}
+
+.cover-v-v{
+  width: 33.3%;
+  height: 100rpx;    
+  float: left;
+}
+ 
