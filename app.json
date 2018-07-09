@@ -9,6 +9,7 @@
     "pages/coupon/coupon",
     "pages/cart/cart",
     "pages/login/login",
+    "pages/authorize/authorize",
     "pages/trytoware/trytoware",
     "pages/reciver/reciver",
     "pages/reciver-add/reciver-add",
