@@ -4,6 +4,16 @@
   text-align: center;
   line-height: 50px;
 }
+
+.cover-v-1{
+  width: 20%;
+  height: auto;   
+  z-index: 99999;
+  right:0;
+  position: absolute;
+  top:50px;
+}
+
 .cover-v{
   width: 100%;
   height: 100rpx;   

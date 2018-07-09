@@ -1,6 +1,27 @@
 <view class="page">
   <view  class="page__bd" style='position:fixed;top:0px;bottom:0px;width:100%;'> 
+        <view style='width:100%;height:auto;' >  
           <image   style='width:100%;' mode="widthFix"  src="{{src}}"  />
+        </view> 
+
+          <view class="cover-v-1" >  
+            <view style="width:100%;height:auto;padding-top:25px;" >
+              <image   style='width:100%;' mode="widthFix"  src="/images/icon/g.png"  />
+            </view>
+            <view style="width:100%;height:auto;padding-top:25px;" >
+              <image   style='width:100%;' mode="widthFix"  src="/images/icon/g.png"  />
+            </view>
+            <view style="width:100%;height:auto;padding-top:25px;" >
+              <image   style='width:100%;' mode="widthFix"  src="/images/icon/g.png"  />
+            </view> 
+
+            <view style="width:100%;height:auto;padding-top:25px;" >
+              <image   style='width:100%;' mode="widthFix"  src="/images/icon/g.png"  />
+            </view> 
+            <view style="width:100%;height:auto;padding-top:25px;" >
+              <image   style='width:100%;' mode="widthFix"  src="/images/icon/g.png"  />
+            </view> 
+          </view>
           <cover-view class="cover-v">
             <cover-view class="cover-v-v"> 
               <cover-image class="btnImg-small" style='margin-top:20px;float:left;margin-left:20rpx;' src="../../images/icon/reset_1.png"   bindtap="resets"/> 
