@@ -8,6 +8,14 @@ Page({
     state:1,
     listData:[], 
     currentValue: 0,
+  },onShow: function () {
+    console.log(wx.getStorageSync('customer'));
+    if (wx.getStorageSync('customer') == null || wx.getStorageSync('customer') == '') {
+      wx.redirectTo({
+        url: '../authorize/authorize',
+      })
+      return;
+    }
   },
 
   /**
@@ -55,15 +63,7 @@ Page({
    */
   onReady: function () {
   
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
+  }, 
   /**
    * 生命周期函数--监听页面隐藏
    */

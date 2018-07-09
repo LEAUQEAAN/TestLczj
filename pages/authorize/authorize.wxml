@@ -1,0 +1,16 @@
+<view class="container"  >
+  <image style="width:100%;height:100%;" src="../../images/icon/login_bg_1.jpg" />
+
+  <view class="login-v"  >
+      <view class="ittm hd" >
+        授权确认
+      </view>
+       <view class="ittm" style="font-size:14px;border-width:0px;">
+            为了更好地为您服务，我们需要获取你的手机号，请您确认授权，谢谢！
+       </view>
+      <view class="ittm ft">
+           <button class="weui-btn  btn "   plain='true' type='default'  bindtap='showLogins'  size="mini">取消</button>\t\t
+           <button class="weui-btn  btn "   plain='true' type='primary'  open-type="getPhoneNumber"   bindgetphonenumber="getPhoneNumber"    size="mini">确认</button>
+      </view>
+  </view> 
+</view>

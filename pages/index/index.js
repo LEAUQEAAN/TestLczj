@@ -13,15 +13,17 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     
-  }, onShow:function(){
-    /* console.log(wx.getStorageSync('phone'));
-    if (wx.getStorageSync('phone') == '') {
-      wx.redirectTo({ 
-        url: '../login/login',
-      })
-      return;
-    } */
-  },
+  }
+  // , onShow:function(){
+  //   console.log(wx.getStorageSync('customer'));
+  //   if (wx.getStorageSync('customer') == null || wx.getStorageSync('customer') == '') {
+  //     wx.redirectTo({ 
+  //       url: '../authorize/authorize',
+  //     })
+  //     return;
+  //   } 
+  // }
+  ,
   onLoad: function () {
  
     wx.setStorageSync('host', 'http://jx-lczj.nat300.top/Lczj');
@@ -77,7 +79,7 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  },enter:function(){ 
+  },enter:function(){
     wx.navigateTo({
       url: '../glasses_1/glasses_1',
     });

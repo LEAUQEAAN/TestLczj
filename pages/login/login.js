@@ -1,6 +1,7 @@
 // pages/login/login.js
-Page({
+const app = getApp();
 
+Page({
   /**
    * 页面的初始数据
    */
@@ -11,14 +12,17 @@ Page({
     types: '',
     typescolor: '',
     textGet: '获取',
-    vcode: ''  
-  },
-
+    vcode: ''  , 
+  } ,
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.data.phone = options.phone; 
+    console.log(options.phone)
+    this.setData({
+      phone: options.phone
+    })
   },
 
   /**
@@ -72,11 +76,30 @@ Page({
 
     var icode = wx.getStorageSync('icode');
 
-    if (this.data.vcode == icode) {
-      wx.setStorageSync('phone',this.data.phone);  
-      wx.switchTab({
-        url: '../index/index',
+    if (this.data.vcode == icode) { 
+      wx.request({
+        url: 'http://jx-lczj.nat300.top/Lczj/customer/login',
+        data: {
+          phone: this.data.phone,
+          _name: app.globalData.userInfo.nickName+'中文',
+          sex: app.globalData.userInfo.gender+''
+        },
+        method:"POST",
+        header: {
+          'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
+        },
+        success: (res) => {
+          console.log(res.data)
+          wx.setStorageSync("customer", res.data)  
+          wx.switchTab({
+            url: '../index/index',
+          })
+        }
       })
+
+
+
+    
     } else {
       wx.showToast({
         title: '验证码错误',
